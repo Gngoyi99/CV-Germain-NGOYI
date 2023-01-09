@@ -18,9 +18,9 @@ window.addEventListener("scroll", function () {
 //TYPED
 var typed = new Typed(".typed", {
   strings: [
-    "Ayant finalisé ma formation de développeur web, je recherche actuellement ma première expérience dans le domaine. Je saurai mettre à profit mes connaissances et, autonome je saurai être force de proposition pour apporter davantage à ce poste. Après un temps de réflexion post bac, les voyages et mes expériences professionnelles à la poste et en tant que gestionnaire, m’ont permis de trouver ma voie. Aujourd'hui, mon objectif est d'évoluer professionnellement. Rigoureux et organisé, je cherche un environnement de travail dans lequel m'épanouir en tant que développeur web.",
+    "Ayant finalisé ma formation de développeur web, je recherche actuellement ma première expérience dans le domaine. Je saurai mettre à profit mes connaissances et, autonome je saurai être force de proposition pour apporter davantage à ce poste. Aujourd'hui, mon objectif est d'évoluer professionnellement. Rigoureux et organisé, je cherche un environnement de travail dans lequel m'épanouir en tant que développeur web.",
   ],
-  typeSpeed: 20,
+  typeSpeed: 1,
 });
 
 //Compteur live

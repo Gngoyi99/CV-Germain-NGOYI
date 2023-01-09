@@ -15,6 +15,7 @@ h3 {
   text-transform: uppercase;
   text-shadow: -1px -1px 1px #283655;
 }
+
 li {
   list-style-type: none;
 }
@@ -50,8 +51,11 @@ h1 {
 }
 h2 {
   padding: 20px 0 50px 0;
-  font-size: 3em;
+  font-size: 100%;
   text-transform: uppercase;
+}
+header h5 {
+  font-size: 86%;
 }
 .presentation {
   height: 240px;
@@ -81,7 +85,7 @@ h2 {
   box-shadow: 0 0 4px #111;
 }
 header .button {
-  margin-top: 45px;
+  margin-top: 5%;
 }
 header .button a {
   padding: 20px 80px;
@@ -175,7 +179,7 @@ header .button:hover a {
 }
 #parcours h4 {
   font-size: 1.6em;
-  color: #ff4e50;
+  color: #669999;
   margin-left: 20px;
 }
 #parcours h6 {
@@ -229,8 +233,14 @@ header .button:hover a {
   font-size: 3em;
   padding-bottom: 15px;
 }
+#portfolio h4 {
+  font-size: 100%;
+  padding-bottom: 15px;
+}
+
 .projet {
   display: flex;
+  justify-content: center;
 }
 .projet:nth-child(2) {
   margin-left: 3%;
@@ -357,7 +367,7 @@ header .button:hover a {
   margin-top: 80px;
   padding: 50px 100px 100px 100px;
   width: 100%;
-  background-color: #375e97;
+  background-color: #669999;
   clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 84%);
 }
 #other-skills h3 {
@@ -365,7 +375,7 @@ header .button:hover a {
   font-size: 3em;
   padding-top: 30px;
   text-shadow: -1px 1px 0px maroon;
-  color: #ffbb00;
+  color: #333333;
 }
 .cloud {
   text-align: center;
@@ -378,14 +388,14 @@ header .button:hover a {
   padding: 250px 50px 100px 50px;
   margin: -300px 0 -90px 0;
   clip-path: polygon(0 21%, 100% 31%, 100% 95%, 0% 100%);
-  background: #ffbb00;
+  background: #333333;
 }
 #hobbies h3 {
   transform: rotate(3.2deg);
   font-size: 3em;
   /* padding-top: 30px; */
   text-shadow: -1px 1px 0px maroon;
-  color: #375e97;
+  color: #669999;
 }
 .pictures {
   display: flex;
@@ -428,6 +438,226 @@ header .button:hover a {
   transition: transform 1s;
   transform-style: preserve-3d;
 }
+
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
+}
+
+/********************FOOTER******************/
+footer {
+  background: url(media/footer.jpg) 50% 0% no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 160px 50px 5px 50px;
+}
+footer h3 {
+  padding: 0 0 60px 0;
+  font-size: 2.5em;
+}
+.footer-icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+}
+.network {
+  font-size: 4em;
+  border: 1px solid #b3aca7;
+  padding: 30px 45px;
+  color: #333333;
+  z-index: -1 !important;
+  border-radius: 50%;
+}
+.network:hover,
+textarea:hover,
+input:hover,
+form-button:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+  padding-top: 15px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  38% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.arrow a {
+  font-size: 3em;
+  border: none;
+  color: #726659;
+}
+.arrow:hover i {
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
+  color: #726659;
+}
+.footer p {
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
+}
+
+/*********************************Formulaire ********************/
+.form-conatiner {
+  padding-top: 20px;
+}
+#reused_form {
+  position: relative;
+  margin: 50px auto;
+}
+input {
+  font-size: 0.85em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+}
+textarea {
+  width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  resize: none;
+}
+input::placeholder,
+textarea::placeholder,
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #aca49c;
+}
+input:hover::placeholder,
+textarea:hover::placeholder,
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #e2dedb;
+}
+.form-button {
+  background: transparent;
+  border: solid 1px #b3aca7;
+  padding: 20px 75px;
+  margin: 14px 0 -20px 0;
+}
+.form-conatiner h4 {
+  font-size: 2em;
+}
+#error_message {
+  color: red;
+  border: 1px solid red;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px 15px 8px 15px;
+  box-shadow: 0 0 5px red;
+}
+#success_message {
+  color: green;
+  border: 1px solid green;
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 50px;
+  box-shadow: 0 0 5px green;
+}
+
+/**********MEDIA QUERIES**********/
+@media screen and (max-width: 900px) {
+  .infos h5,
+  .typed {
+    font-size: 0.9em;
+  }
+  #langages {
+    margin-left: 1%;
+    margin-top: 10%;
+  }
+  #formation {
+    margin-right: 1%;
+  }
+  .network {
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 770px) {
+  h1 h2 {
+    font-size: 2em;
+  }
+  #langages {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  #formation {
+    margin: 210px 0 0 10%;
+    width: 80%;
+    float: none;
+    display: block;
+  }
+  .counter-value {
+    font-size: 1em;
+  }
+  .data-span {
+    font-size: 0.8em;
+  }
+  #parcours {
+    margin-top: -50px;
+  }
+  .legende p {
+    display: none;
+  }
+  #other-skills h3,
+  #hobbies h3 {
+    font-size: 2em;
+  }
+  .cloud {
+    font-size: 1.5em;
+  }
+  .flip-box-back p {
+    padding: 10px 0px;
+  }
+  input,
+  textarea {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  h1 {
+    padding-top: 20px;
+  }
+  h3 {
+    font-size: 1em !important;
+  }
+  .projet:nth-child(2),
+  .projet:nth-child(3) {
+    margin-left: 0;
+  }
+  .legende {
+    opacity: 1;
+  }
+  .other-skills {
+    display: none;
+  }
+  #hobbies {
+    margin-left: -30px;
+  }
+  .flip-box-back p {
+    font-size: 0.7em;
+  }
 }
