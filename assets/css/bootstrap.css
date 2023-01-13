@@ -753,6 +753,7 @@ pre code {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
+  color: #333333;
 }
 
 .col-7 {
@@ -4728,7 +4729,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: #669999;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,

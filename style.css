@@ -13,7 +13,9 @@ h3 {
   font-family: "Audiowide", "sans-serif";
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-shadow: -1px -1px 1px #283655;
+  text-shadow: -1px -1px 1px #333333;
+  font-size: 1.75em;
+  color: #333333;
 }
 
 li {
@@ -42,10 +44,11 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4.3em;
   text-transform: uppercase;
+  color: #333333;
 }
 #line {
   height: 1px;
-  background-color: #b3aca7;
+  background-color: #000000;
   width: 25%;
   margin: 0 auto;
 }
@@ -62,14 +65,14 @@ header h5 {
   margin-top: 20px;
 }
 .infos {
-  border: 1px solid #b3aca7;
+  border: 1px solid #000000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0;
 }
 .photo {
-  border: 1px solid #b3aca7;
+  border: 1px solid #000000;
   position: relative;
 }
 .photo img {
@@ -89,27 +92,33 @@ header .button {
 }
 header .button a {
   padding: 20px 80px;
-  border: 1px solid #b3aca7;
+  border: 1px solid #333333;
   width: 300px;
+  color: #fff;
+  background-color: #33333391;
 }
 header .button:hover a {
-  background: #b3aca7;
-  color: #e2dedb;
+  color: #669999;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+}
+.typed {
+  color: #333333;
+  display: flex;
+  margin-top: 35px;
 }
 /*********************LANGAGES*****************************/
 #langages {
   padding: 80px 80px 80px 50px;
   margin: 20px 0 0 6%;
-  height: 620px;
+  height: 642px;
   width: 47%;
   max-width: 640px;
-  background: rgb(0, 140, 255);
+  background: rgb(102, 153, 153);
   background: linear-gradient(
-    90deg,
-    rgba(0, 140, 255, 1) 35%,
-    rgba(255, 222, 78, 0.7469581582633054) 100%
+    171deg,
+    rgba(102, 153, 153, 1) 20%,
+    rgba(51, 51, 51, 1) 100%
   );
   clip-path: polygon(0 11%, 97% 0, 71% 95%, 0% 110%);
 }
@@ -117,6 +126,7 @@ header .button:hover a {
 #langages .bar {
   padding: 10px 0 4px 0;
   letter-spacing: 0.1em;
+  color: #fff;
 }
 /********************Formation***************************/
 #formation {
@@ -127,11 +137,11 @@ header .button:hover a {
   padding: 110px 0 60px 50px;
   width: 45%;
   max-width: 660px;
-  background: rgb(0, 140, 255);
+  background: rgb(102, 153, 153);
   background: linear-gradient(
-    90deg,
-    rgba(255, 222, 78, 0.7469581582633054) 100%,
-    rgba(0, 140, 255, 1) 35%
+    171deg,
+    rgba(102, 153, 153, 1) 20%,
+    rgba(51, 51, 51, 1) 100%
   );
   clip-path: polygon(0 110%, 97% 95%, 100% 0, 0 11%);
 }
@@ -144,21 +154,23 @@ header .button:hover a {
   font-weight: bold;
   letter-spacing: 0.08em;
   padding-bottom: 10px;
-  color: rgb(0, 140, 255);
-  text-shadow: -1px -1px -1px rgb(0, 190, 245);
+  color: rgb(248, 250, 252);
+  text-shadow: -1px -1px -1px rgb(247, 249, 250);
+  font-size: 16px;
 }
 .counter {
   display: flex;
   text-align: center;
 }
 .data {
-  border: 1px solid rgb(0, 190, 245);
+  border: 1px solid #333333;
   width: 170px;
   margin: 0 4%;
-  box-shadow: 2px 2px 2px rgb(0, 140, 255);
+  color: #fff;
+  box-shadow: 2px 2px 2px rgb(12, 12, 12);
 }
 .counter-value {
-  font-size: 2em;
+  font-size: 16px;
 }
 .data-span {
   font-size: 1.8em;
@@ -166,7 +178,7 @@ header .button:hover a {
 /*************************Parcours***************************/
 #parcours {
   max-width: 800px;
-  margin: 640px auto 180px auto;
+  margin: 400px auto 180px auto;
   padding: 40px 30px 100px 30px;
   background: url(./media/parcours.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
@@ -174,7 +186,6 @@ header .button:hover a {
   box-shadow: -1px -1px 8px #283655;
 }
 #parcours h3 {
-  font-size: 2.5em;
   padding-bottom: 30px;
 }
 #parcours h4 {
@@ -184,15 +195,16 @@ header .button:hover a {
 }
 #parcours h6 {
   font-style: italic;
-  color: #edca21;
+  color: #333333;
   margin-left: 20px;
 }
 #parcours p {
   line-height: 1.9em;
+  color: #111;
 }
 .timeline {
   border-top: 3px solid;
-  border-image: linear-gradient(to right, #f9d423, #ff4e50);
+  border-image: linear-gradient(to right, #333333, #669999);
   border-image-slice: 1;
   margin: 0;
   padding: 40px;
@@ -200,7 +212,7 @@ header .button:hover a {
 }
 .timeline:nth-child(1)::after {
   content: "▲";
-  color: #ff4e50;
+  color: #669999;
   position: absolute;
   top: -10px;
   right: -10px;
@@ -230,12 +242,17 @@ header .button:hover a {
   box-shadow: 0px 0px 1px #a8a8a9;
 }
 #portfolio h3 {
-  font-size: 3em;
+  font-size: 1.75em;
+  color: #333333;
   padding-bottom: 15px;
 }
 #portfolio h4 {
   font-size: 100%;
   padding-bottom: 15px;
+  color: #333333;
+}
+#portfolio p {
+  color: #333333;
 }
 
 .projet {
@@ -328,6 +345,7 @@ header .button:hover a {
   margin-top: 20px;
   font-size: 1.1em;
   float: right;
+  color: #669999;
   border-radius: 3px;
   background: #e2dedb;
   animation: shadow-pop-br 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -403,8 +421,6 @@ header .button:hover a {
 }
 .flip-box-back div {
   margin: 0 auto;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
 }
 .flip-box-back p {
   text-transform: uppercase;
@@ -412,7 +428,8 @@ header .button:hover a {
   font-size-adjust: auto;
 }
 .flip-box-back {
-  color: white;
+  color: #333333;
+  text-align: center;
   transform: rotateY(180deg);
 }
 .flip-box-front,
@@ -462,7 +479,7 @@ footer h3 {
 }
 .network {
   font-size: 4em;
-  border: 1px solid #b3aca7;
+  border: 1px solid #000000;
   padding: 30px 45px;
   color: #333333;
   z-index: -1 !important;
@@ -472,8 +489,8 @@ footer h3 {
 textarea:hover,
 input:hover,
 form-button:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: #669999;
+  color: #000000;
   transition: all 0.3s ease-in-out;
 }
 
@@ -497,12 +514,12 @@ form-button:hover {
 .arrow a {
   font-size: 3em;
   border: none;
-  color: #726659;
+  color: #333333;
 }
 .arrow:hover i {
   transform: scale(1.6);
   transition: 0.5s ease-in-out;
-  color: #726659;
+  color: #339999;
 }
 .footer p {
   font-size: 0.9em;
@@ -524,8 +541,7 @@ input {
   padding: 0px 15px;
   background: transparent;
   outline: none;
-  color: #726659;
-  border: solid 1px #b3aca7;
+  border: solid 1px #000000;
   border-bottom: none;
 }
 textarea {
@@ -535,15 +551,14 @@ textarea {
   padding: 15px;
   background: transparent;
   outline: none;
-  color: #726659;
-  border: solid 1px #b3aca7;
+  border: solid 1px #000000;
   resize: none;
 }
 input::placeholder,
 textarea::placeholder,
 input:focus::placeholder,
 textarea:focus::placeholder {
-  color: #aca49c;
+  color: #333333;
 }
 input:hover::placeholder,
 textarea:hover::placeholder,
@@ -553,7 +568,7 @@ textarea:hover:focus::placeholder {
 }
 .form-button {
   background: transparent;
-  border: solid 1px #b3aca7;
+  border: solid 1px #000000;
   padding: 20px 75px;
   margin: 14px 0 -20px 0;
 }
