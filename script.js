@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
 //TYPED
 var typed = new Typed(".typed", {
   strings: [
-    "Ayant finalisé ma formation de développeur web, je recherche actuellement ma première expérience dans le domaine. Je saurai mettre à profit mes connaissances et, autonome je saurai être force de proposition pour apporter davantage à ce poste. Aujourd'hui, mon objectif est d'évoluer professionnellement. Rigoureux et organisé, je cherche un environnement de travail dans lequel m'épanouir en tant que développeur web.",
+    "Après avoir achevé ma formation de développeur web, je suis à la recherche d'une alternance pour préparer mon diplôme de Développeur d'application - PHP/Symfony. Je suis convaincu de pouvoir mettre à profit mes connaissances et devenir une force de proposition autonome pour apporter davantage à ce poste. Grâce à mes voyages et à mes expériences professionnelles à la Poste et en tant que gestionnaire, j'ai pu trouver ma voie après une période de réflexion post-bac. Aujourd'hui, mon objectif est d'évoluer professionnellement dans un environnement de travail qui me permettra de m'épanouir en tant que développeur web. Mon profil rigoureux et organisé me permettra de contribuer de manière positive à toute entreprise cherchant un développeur web motivé.",
   ],
   typeSpeed: 1,
 });
