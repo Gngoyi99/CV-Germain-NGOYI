@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
 //TYPED
 var typed = new Typed(".typed", {
   strings: [
-    "Après avoir achevé ma formation de développeur web, je suis à la recherche d'une alternance pour préparer mon diplôme de Développeur d'application - PHP/Symfony. Je suis convaincu de pouvoir mettre à profit mes connaissances et devenir une force de proposition autonome pour apporter davantage à ce poste. Grâce à mes voyages et à mes expériences professionnelles à la Poste et en tant que gestionnaire, j'ai pu trouver ma voie après une période de réflexion post-bac. Aujourd'hui, mon objectif est d'évoluer professionnellement dans un environnement de travail qui me permettra de m'épanouir en tant que développeur web. Mon profil rigoureux et organisé me permettra de contribuer de manière positive à toute entreprise cherchant un développeur web motivé.",
+    "Je suis quelqu'un qui ne recule pas devant la difficulté. J'ai choisi de me lancer dans le domaine de la programmation et de la création de sites web car j'aime apprendre de nouvelles choses et me surpasser. C'est pourquoi j'ai obtenu mon diplôme de développeur web Bac+2 avec succès. Je suis prêt à affronter tous les défis qui se présentent à moi et à m'adapter constamment pour atteindre les objectifs fixés, en cherchant toujours à apprendre et à progresser dans mon domaine.",
   ],
   typeSpeed: 1,
 });
